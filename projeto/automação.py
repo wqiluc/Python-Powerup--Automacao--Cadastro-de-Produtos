@@ -31,7 +31,9 @@ sleep(2)
 
 pyautogui.press("tab")
 
-rota_dados_csv = r"/Users/lucaspaguettipereira/Downloads/Produtos.csv"
+caminho_base = os.path.dirname(os.path.abspath(__file__))
+rota_dados_csv = os.path.join(caminho_base, "Produtos.csv")
+
 tabela_dados = pd.read_csv(rota_dados_csv)
 
 for _, linha in tabela_dados.iterrows():
@@ -64,10 +66,10 @@ for _, linha in tabela_dados.iterrows():
     sleep(1)
     
     pyautogui.press("enter")
-    sleep(2)
+    sleep(4)
 
     pyautogui.scroll(5000)
-    sleep(0.5)
+    sleep(1)
     pyautogui.click(x=600, y=300)
     pyautogui.scroll(7000)
     sleep(3)

@@ -85,6 +85,7 @@ Python Powerup - Automação Cadastro de Produtos/
 ├── Produtos.csv   
 ├── readme.md
 └── license (MIT)
+└── .gitignore
 <img src="https://img.shields.io/badge/-Arquitetura-111827?style=flat-square&logo=databricks&logoColor=white"
 style="vertical-align:middle; margin-left:5px;"/>
 </pre>
